@@ -2,47 +2,42 @@
 
 This project applies deep learning to estimate microfluidic flow rates (in µL/min) from grayscale speckle pattern videos using a 3D Convolutional Neural Network (3D CNN). It was developed under the guidance of Dr. Christopher Raub as part of a study on non-invasive optical methods for measuring blood flow.
 
----
-
 ## Background
 
 Speckle patterns arise when coherent light (e.g., laser) scatters through dynamic, heterogeneous media like flowing blood. As the fluid's speed or direction changes, the speckle patterns evolve accordingly. By analyzing sequences of these patterns, we can estimate the underlying flow rate.
-
----
 
 ## Project Overview
 
 ### What This Code Does
 
-- Loads short `.avi` speckle videos (named by flow rate, e.g. `5ulpermin.avi`)
-- Splits each video into overlapping grayscale frame stacks
-- Trains a 3D CNN (`BloodFlowCNN`) to predict flow rate from each stack
-- Outputs predictions to CSV and visualizes results
-- Supports model evaluation via checkpointed weights
-
----
+• Loads short `.avi` speckle videos (named by flow rate, e.g. `5ulpermin.avi`)
+• Splits each video into overlapping grayscale frame stacks
+• Trains a 3D CNN (`BloodFlowCNN`) to predict flow rate from each stack
+• Outputs predictions to CSV and visualizes results
+• Supports model evaluation via checkpointed weights
 
 ## Folder Structure
 project-root/
-│
-├── data/ # Folder for input videos (*.avi)
+├── data/ 
 ├── models/
 │ └── bloodflow_cnn.py # Core 3D CNN model
 ├── src/
-│ ├── dataset.py # Custom PyTorch Dataset
-│ ├── dataloader.py # Preprocessing and loader functions
-│ └── train.py # Training pipeline
+│ ├── dataset.py # 
+│ ├── dataloader.py 
+│ └── train.py 
 │
 ├── outputs/
-│ ├── predictions.csv # Final output with 120 predictions
-│ ├── flowrate_plot.png # True vs Predicted plot
-│ ├── train_loss.png # Training loss curve
-│ ├── scaler.pkl # Saved target normalizer
-│ └── checkpoints/ # Saved model weights
+│ ├── predictions.csv 
+│ ├── flowrate_plot.png 
+│ ├── train_loss.png 
+│ ├── scaler.pkl 
+│ └── checkpoints/
 │
-├── main.py # CLI entry point for training/evaluation
-├── requirements.txt # Python dependencies
-└── README.md # Project overview (this file)
+├── main.py 
+
+├── requirements.txt 
+
+└── README.md 
 
 ---
 
