@@ -18,19 +18,33 @@ Speckle patterns arise when coherent light (e.g., laser) scatters through dynami
 
 ## Folder Structure
 project-root/
+
 ├── data/ 
+
 ├── models/
-│ └── bloodflow_cnn.py # Core 3D CNN model
+
+│ └── bloodflow_cnn.py
+
 ├── src/
-│ ├── dataset.py # 
+
+│ ├── dataset.py 
+
 │ ├── dataloader.py 
+
 │ └── train.py 
+
 │
+
 ├── outputs/
+
 │ ├── predictions.csv 
+
 │ ├── flowrate_plot.png 
-│ ├── train_loss.png 
+
+│ ├── train_loss.png
+
 │ ├── scaler.pkl 
+
 │ └── checkpoints/
 │
 ├── main.py 
