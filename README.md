@@ -57,8 +57,8 @@ project-root/
 
 ### 1. Install dependencies
 
-```bash
 pip install -r requirements.txt
+
 ##Prepare your Data 
 Place all input .avi files into the data/ folder. The expected filenames are:
 
