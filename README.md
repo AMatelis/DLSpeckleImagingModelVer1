@@ -59,24 +59,19 @@ project-root/
 
 pip install -r requirements.txt
 
-##Prepare your Data 
+## 2. Prepare your Data 
 Place all input .avi files into the data/ folder. The expected filenames are:
 
 0ulpermin.avi
-
 5ulpermin.avi
-
 50ulpermin.avi
-
 100ulpermin.avi
-
 150ulpermin.avi
-
 400ulpermin.avi
 
 Each video should be at least 5 frames long (the default sequence length).
 
-##3. Train the model
+## 3. Train the model
 bash
 Copy
 Edit
@@ -91,7 +86,7 @@ Save a CSV of predictions to outputs/predictions.csv
 
 Plot predicted vs. true flow rates to outputs/flowrate_plot.png
 
-##4. Evaluate a trained model
+## 4. Evaluate a trained model
 bash
 Copy
 Edit
@@ -104,11 +99,11 @@ MAE (Mean Absolute Error)
 
 R² Score (Explained Variance)
 
-##Output Example (predictions.csv)
+## Output Example (predictions.csv)
 Index	TrueFlowRate	PredictedFlowRate	AbsoluteError	SquaredError	RelativeError (%)	FlowRateClass
 0	400.0	380.42	19.58	383.29	4.9	High
 
-##Requirements
+## Requirements
 nginx
 Copy
 Edit
@@ -119,5 +114,6 @@ scikit-learn
 matplotlib
 pandas
 notebook
-##Acknowledgement
+
+## Acknowledgement
 Developed under the guidance of Dr. Christopher Raub and assisted by Thuc Pham at The Catholic Unniversity of America as part of a project investigating speckle-based imaging for blood flow estimation in microfluidic systems.
