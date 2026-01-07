@@ -1,4 +1,4 @@
-# Speckle-Based Flow Rate Estimation
+# Speckle-Based Flow Rate Estimation 3D CNN Linear Regression
 
 This project applies deep learning to estimate microfluidic flow rates (in µL/min) from grayscale speckle pattern videos using a 3D Convolutional Neural Network (3D CNN). It was developed under the guidance of Dr. Christopher Raub as part of a study on non-invasive optical methods for measuring blood flow.
 
